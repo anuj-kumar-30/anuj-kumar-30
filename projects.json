@@ -1,0 +1,14 @@
+{
+	"Company Sales Brochure Generator": {
+        "github_link":"https://github.com/anuj-kumar-30/Company_Sales_Brochure_Generator",
+        "live link":"https://anuj-kumar-30-company-sales-brochure--brochure-streamlit-w2huvs.streamlit.app/",
+        "Description": "AI-powered tool that automatically generates professional sales brochures for companies using natural language processing and customizable templates.",
+        "Tags": ["streamlit", "Python", "OpenAI", "LLM"]
+    },
+    "Chat with Multiple PDFs": {
+        "github_link": "https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main",
+        "live link": "https://chat-with-mulitple-pdfs.streamlit.app/",
+        "Description": "An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model.",
+        "Tags": ["streamlit", "Python", "Google AI", "LLM"]
+    }
+}

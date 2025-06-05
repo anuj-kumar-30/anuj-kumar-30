@@ -1,4 +1,23 @@
-# 🚀 Project Dashboard
+import json
+import os
+from datetime import datetime
+
+def read_projects():
+    """Read projects from projects.json file"""
+    try:
+        with open('projects.json', 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print("Error: projects.json not found")
+        return {}
+    except json.JSONDecodeError:
+        print("Error: Invalid JSON in projects.json")
+        return {}
+
+def generate_markdown(projects):
+    """Generate markdown content from projects data"""
+    # Start with the header and basic structure
+    content = f"""# 🚀 Project Dashboard
 
 <div align="center">
 
@@ -7,9 +26,9 @@
 </div>
 
 ## 📊 Project Statistics
-- Total Projects: 1
-- Technologies Used: 4
-- Categories: LLM, OpenAI, Python, streamlit
+- Total Projects: {len(projects)}
+- Technologies Used: {count_technologies(projects)}
+- Categories: {get_categories(projects)}
 
 ## 🔍 Filter Projects
 <div style="display: flex; gap: 10px; margin: 20px 0;">
@@ -32,44 +51,68 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="project-row" data-tags="streamlit,Python,OpenAI,LLM">
+"""
+
+    # Add each project to the table
+    for project_name, project_data in projects.items():
+        content += f"""            <tr class="project-row" data-tags="{','.join(project_data.get('Tags', []))}">
                 <td>
-                    <strong>Company Sales Brochure Generator</strong>
+                    <strong>{project_name}</strong>
                 </td>
-                <td>AI-powered tool that automatically generates professional sales brochures for companies using natural language processing and customizable templates.</td>
+                <td>{project_data.get('Description', '')}</td>
                 <td>
                     <div class="tech-stack">
-                        <span class="tech-badge">streamlit</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">OpenAI</span>
-                        <span class="tech-badge">LLM</span>
-                    </div>
+"""
+        # Add technology badges
+        for tech in project_data.get('Tags', []):
+            content += f"""                        <span class="tech-badge">{tech}</span>\n"""
+        
+        content += """                    </div>
                 </td>
                 <td>
                     <div class="project-links">
-                        <a href="https://github.com/anuj-kumar-30/Company_Sales_Brochure_Generator" class="project-link">
+"""
+        # Add GitHub link if available
+        if 'github_link' in project_data:
+            content += f"""                        <a href="{project_data['github_link']}" class="project-link">
                             <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
                         </a>
                         <br>
-                        <a href="https://anuj-kumar-30-company-sales-brochure--brochure-streamlit-w2huvs.streamlit.app/" class="project-link">
+"""
+        # Add Live Demo link if available
+        if 'live link' in project_data:
+            content += f"""                        <a href="{project_data['live link']}" class="project-link">
                             <img src="https://img.shields.io/badge/Live_Demo-238636?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
                         </a>
-                    </div>
+"""
+        content += """                    </div>
                 </td>
             </tr>
-        </tbody>
+"""
+
+    # Add the closing table tags
+    content += """        </tbody>
     </table>
 </div>
 
 ## 📝 Project Details
+"""
 
-### Company Sales Brochure Generator
-- **Description:** AI-powered tool that automatically generates professional sales brochures for companies using natural language processing and customizable templates.
-- **Tech Stack:** streamlit, Python, OpenAI, LLM
+    # Add detailed project information
+    for project_name, project_data in projects.items():
+        content += f"""
+### {project_name}
+- **Description:** {project_data.get('Description', '')}
+- **Tech Stack:** {', '.join(project_data.get('Tags', []))}
 - **Links:**
-  - [GitHub Repository](https://github.com/anuj-kumar-30/Company_Sales_Brochure_Generator)
-  - [Live Demo](https://anuj-kumar-30-company-sales-brochure--brochure-streamlit-w2huvs.streamlit.app/)
+"""
+        if 'github_link' in project_data:
+            content += f"""  - [GitHub Repository]({project_data['github_link']})\n"""
+        if 'live link' in project_data:
+            content += f"""  - [Live Demo]({project_data['live link']})\n"""
 
+    # Add the styling and JavaScript
+    content += """
 ---
 
 <style>
@@ -207,3 +250,37 @@ function filterProjects(tag) {
 ![Last Updated](https://img.shields.io/badge/Updated-{datetime.now().strftime('%Y--%m--%d')}-30363d)
 
 </div>
+"""
+    return content
+
+def count_technologies(projects):
+    """Count unique technologies across all projects"""
+    technologies = set()
+    for project in projects.values():
+        technologies.update(project.get('Tags', []))
+    return len(technologies)
+
+def get_categories(projects):
+    """Get unique categories from project tags"""
+    categories = set()
+    for project in projects.values():
+        categories.update(project.get('Tags', []))
+    return ', '.join(sorted(categories))
+
+def main():
+    # Read projects
+    projects = read_projects()
+    
+    # Generate markdown
+    markdown_content = generate_markdown(projects)
+    
+    # Write to project_index.md
+    try:
+        with open('project_index.md', 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        print("Successfully generated project_index.md")
+    except Exception as e:
+        print(f"Error writing to project_index.md: {e}")
+
+if __name__ == "__main__":
+    main() 

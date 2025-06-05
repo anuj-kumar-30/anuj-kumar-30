@@ -1,0 +1,29 @@
+name: Update Project Index
+
+on:
+  push:
+    paths:
+      - 'projects.json'
+  workflow_dispatch:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Run update script
+        run: |
+          python generate_project_index.py
+          
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add project_index.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update project index" && git push) 
