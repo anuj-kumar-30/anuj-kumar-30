@@ -7,9 +7,9 @@
 </div>
 
 ## 📊 Project Statistics
-- Total Projects: 1
-- Technologies Used: 4
-- Categories: LLM, OpenAI, Python, streamlit
+- Total Projects: 2
+- Technologies Used: 5
+- Categories: Google AI, LLM, OpenAI, Python, streamlit
 
 ## 🔍 Filter Projects
 <div style="display: flex; gap: 10px; margin: 20px 0;">
@@ -57,6 +57,31 @@
                     </div>
                 </td>
             </tr>
+            <tr class="project-row" data-tags="streamlit,Python,Google AI,LLM">
+                <td>
+                    <strong>Chat with Multiple PDFs</strong>
+                </td>
+                <td>An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model.</td>
+                <td>
+                    <div class="tech-stack">
+                        <span class="tech-badge">streamlit</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Google AI</span>
+                        <span class="tech-badge">LLM</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-links">
+                        <a href="https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main" class="project-link">
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                        </a>
+                        <br>
+                        <a href="https://chat-with-mulitple-pdfs.streamlit.app/" class="project-link">
+                            <img src="https://img.shields.io/badge/Live_Demo-238636?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
+                        </a>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -69,6 +94,13 @@
 - **Links:**
   - [GitHub Repository](https://github.com/anuj-kumar-30/Company_Sales_Brochure_Generator)
   - [Live Demo](https://anuj-kumar-30-company-sales-brochure--brochure-streamlit-w2huvs.streamlit.app/)
+
+### Chat with Multiple PDFs
+- **Description:** An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model.
+- **Tech Stack:** streamlit, Python, Google AI, LLM
+- **Links:**
+  - [GitHub Repository](https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main)
+  - [Live Demo](https://chat-with-mulitple-pdfs.streamlit.app/)
 
 ---
 
