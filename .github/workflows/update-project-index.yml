@@ -4,26 +4,43 @@ on:
   push:
     paths:
       - 'projects.json'
-  workflow_dispatch:
+    branches:
+      - main  # or your default branch name
 
 jobs:
   update-index:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
-      - uses: actions/checkout@v3
-      
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-          
-      - name: Run update script
+
+      - name: Install dependencies
         run: |
-          python generate_project_index.py
-          
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate project index
+        run: python generate_project_index.py
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add project_index.md
+          git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+
       - name: Commit and push if changed
+        if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add project_index.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update project index" && git push) 
+          git commit -m "Update project index [skip ci]" project_index.md
+          git push 
