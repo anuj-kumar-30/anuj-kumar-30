@@ -32,11 +32,11 @@ def generate_markdown(projects):
 
 ## 🎯 Projects
 
-| Project | Description | Technologies | Links |
-|:--------|:------------|:------------|:-----:|
+| # | Project | Description | Technologies | Links |
+|:--|:--------|:------------|:------------|:-----:|
 """
     # Add each project to the table
-    for project_name, project_data in projects.items():
+    for idx, (project_name, project_data) in enumerate(projects.items(), 1):
         # Create technology badges
         tech_badges = ' '.join([f"![{tech}](https://img.shields.io/badge/{tech}-58A6FF?style=flat-square&logo={tech.lower()}&logoColor=white)" for tech in project_data.get('Tags', [])])
         
@@ -47,14 +47,21 @@ def generate_markdown(projects):
         if 'live link' in project_data:
             links.append(f"[![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)]({project_data['live link']})")
         
+        # Create anchor link for project name
+        anchor_name = project_name.lower().replace(' ', '-')
+        project_link = f"[**{project_name}**](#{anchor_name})"
+        
         # Add project row
-        content += f"| **{project_name}** | {project_data.get('Description', '')} | {tech_badges} | {' '.join(links)} |\n"
+        content += f"| {idx} | {project_link} | {project_data.get('Description', '')} | {tech_badges} | {' '.join(links)} |\n"
 
     # Add project details section
     content += "\n## 📝 Project Details\n"
-    for project_name, project_data in projects.items():
+    for idx, (project_name, project_data) in enumerate(projects.items(), 1):
+        # Create anchor for project details
+        anchor_name = project_name.lower().replace(' ', '-')
         content += f"""
-### {project_name}
+<a id="{anchor_name}"></a>
+### {idx}. {project_name}
 - **Description:** {project_data.get('Description', '')}
 - **Tech Stack:** {', '.join(project_data.get('Tags', []))}
 - **Links:**
