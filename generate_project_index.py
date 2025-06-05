@@ -51,7 +51,7 @@ def generate_markdown(projects):
             links.append(f"[![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)]({project_data['live link']})")
         
         # Create anchor link for project name
-        anchor_name = project_name.lower().replace(' ', '-')
+        anchor_name = project_name.lower().replace(' ', '-').replace('&', 'and')
         project_link = f"[**{project_name}**](#{anchor_name})"
         
         # Add project row
@@ -61,10 +61,9 @@ def generate_markdown(projects):
     content += "\n## 📝 Project Details\n"
     for idx, (project_name, project_data) in enumerate(projects.items(), 1):
         # Create anchor for project details
-        anchor_name = project_name.lower().replace(' ', '-')
+        anchor_name = project_name.lower().replace(' ', '-').replace('&', 'and')
         content += f"""
-<a id="{anchor_name}"></a>
-### {idx}. {project_name}
+### {idx}. {project_name} {{#{anchor_name}}}
 - **Description:** {project_data.get('Description', '')}
 - **Tech Stack:** {', '.join(project_data.get('Tags', []))}
 - **Links:**

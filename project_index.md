@@ -22,32 +22,28 @@
 
 ## 📝 Project Details
 
-<a id="company-sales-brochure-generator"></a>
-### 1. Company Sales Brochure Generator
+### 1. Company Sales Brochure Generator {#company-sales-brochure-generator}
 - **Description:** AI-powered tool that automatically generates professional sales brochures for companies using natural language processing and customizable templates.
 - **Tech Stack:** streamlit, Python, OpenAI, LLM
 - **Links:**
   - [GitHub Repository](https://github.com/anuj-kumar-30/Company_Sales_Brochure_Generator)
   - [Live Demo](https://anuj-kumar-30-company-sales-brochure--brochure-streamlit-w2huvs.streamlit.app/)
 
-<a id="chat-with-multiple-pdfs"></a>
-### 2. Chat with Multiple PDFs
+### 2. Chat with Multiple PDFs {#chat-with-multiple-pdfs}
 - **Description:** An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model.
 - **Tech Stack:** streamlit, Python, Google AI, LLM
 - **Links:**
   - [GitHub Repository](https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main)
   - [Live Demo](https://chat-with-mulitple-pdfs.streamlit.app/)
 
-<a id="notion-ai-agent-with-mem0"></a>
-### 3. Notion AI Agent with Mem0
+### 3. Notion AI Agent with Mem0 {#notion-ai-agent-with-mem0}
 - **Description:** An AI-powered Notion agent that uses Mem0 tools and Groq AI model to enhance productivity and automate tasks within Notion workspaces.
 - **Tech Stack:** streamlit, Python, LLM, Groq AI
 - **Links:**
   - [GitHub Repository](https://github.com/anuj-kumar-30/notion_ai_agent_mem0)
   - [Live Demo](https://chat-with-notion-mem0.streamlit.app/)
 
-<a id="notion-ai-agent-with-gemini"></a>
-### 4. Notion AI Agent with Gemini
+### 4. Notion AI Agent with Gemini {#notion-ai-agent-with-gemini}
 - **Description:** An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces.
 - **Tech Stack:** streamlit, Python, OpenAI, Gemini
 - **Links:**
