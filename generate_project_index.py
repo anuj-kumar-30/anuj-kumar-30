@@ -37,8 +37,11 @@ def generate_markdown(projects):
 """
     # Add each project to the table
     for idx, (project_name, project_data) in enumerate(projects.items(), 1):
-        # Create technology badges
-        tech_badges = ' '.join([f"![{tech}](https://img.shields.io/badge/{tech}-58A6FF?style=flat-square&logo={tech.lower()}&logoColor=white)" for tech in project_data.get('Tags', [])])
+        # Create technology badges with proper URL encoding
+        tech_badges = ' '.join([
+            f"![{tech}](https://img.shields.io/badge/{tech.replace(' ', '%20')}-58A6FF?style=flat-square&logo={tech.lower().replace(' ', '')}&logoColor=white)" 
+            for tech in project_data.get('Tags', [])
+        ])
         
         # Create links
         links = []
