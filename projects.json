@@ -10,5 +10,17 @@
         "live link": "https://chat-with-mulitple-pdfs.streamlit.app/",
         "Description": "An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model.",
         "Tags": ["streamlit", "Python", "Google AI", "LLM"]
+    },
+    "Notion AI Agent with Mem0": {
+        "github_link": "https://github.com/anuj-kumar-30/notion_ai_agent_mem0",
+        "live link": "https://chat-with-notion-mem0.streamlit.app/",
+        "Description": "An AI-powered Notion agent that uses Mem0 tools and Groq AI model to enhance productivity and automate tasks within Notion workspaces.",
+        "Tags": ["streamlit", "Python", "LLM", "Groq AI"]
+    },
+    "Notion AI Agent with Gemini": {
+        "github_link": "https://github.com/anuj-kumar-30/notion-ai-agent",
+        "live link": "https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/",
+        "Description": "An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces.",
+        "Tags": ["streamlit", "Python", "OpenAI", "Gemini"]
     }
 }

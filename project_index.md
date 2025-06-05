@@ -7,9 +7,9 @@
 </div>
 
 ## 📊 Project Statistics
-- Total Projects: 2
-- Technologies Used: 5
-- Categories: Google AI, LLM, OpenAI, Python, streamlit
+- Total Projects: 4
+- Technologies Used: 7
+- Categories: Gemini, Google AI, Groq AI, LLM, OpenAI, Python, streamlit
 
 ## 🔍 Filter Projects
 <div style="display: flex; gap: 10px; margin: 20px 0;">
@@ -82,6 +82,56 @@
                     </div>
                 </td>
             </tr>
+            <tr class="project-row" data-tags="streamlit,Python,LLM,Groq AI">
+                <td>
+                    <strong>Notion AI Agent with Mem0</strong>
+                </td>
+                <td>An AI-powered Notion agent that uses Mem0 tools and Groq AI model to enhance productivity and automate tasks within Notion workspaces.</td>
+                <td>
+                    <div class="tech-stack">
+                        <span class="tech-badge">streamlit</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">LLM</span>
+                        <span class="tech-badge">Groq AI</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-links">
+                        <a href="https://github.com/anuj-kumar-30/notion_ai_agent_mem0" class="project-link">
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                        </a>
+                        <br>
+                        <a href="https://chat-with-notion-mem0.streamlit.app/" class="project-link">
+                            <img src="https://img.shields.io/badge/Live_Demo-238636?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="project-row" data-tags="streamlit,Python,OpenAI,Gemini">
+                <td>
+                    <strong>Notion AI Agent with Gemini</strong>
+                </td>
+                <td>An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces.</td>
+                <td>
+                    <div class="tech-stack">
+                        <span class="tech-badge">streamlit</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenAI</span>
+                        <span class="tech-badge">Gemini</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="project-links">
+                        <a href="https://github.com/anuj-kumar-30/notion-ai-agent" class="project-link">
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+                        </a>
+                        <br>
+                        <a href="https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/" class="project-link">
+                            <img src="https://img.shields.io/badge/Live_Demo-238636?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
+                        </a>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -101,6 +151,20 @@
 - **Links:**
   - [GitHub Repository](https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main)
   - [Live Demo](https://chat-with-mulitple-pdfs.streamlit.app/)
+
+### Notion AI Agent with Mem0
+- **Description:** An AI-powered Notion agent that uses Mem0 tools and Groq AI model to enhance productivity and automate tasks within Notion workspaces.
+- **Tech Stack:** streamlit, Python, LLM, Groq AI
+- **Links:**
+  - [GitHub Repository](https://github.com/anuj-kumar-30/notion_ai_agent_mem0)
+  - [Live Demo](https://chat-with-notion-mem0.streamlit.app/)
+
+### Notion AI Agent with Gemini
+- **Description:** An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces.
+- **Tech Stack:** streamlit, Python, OpenAI, Gemini
+- **Links:**
+  - [GitHub Repository](https://github.com/anuj-kumar-30/notion-ai-agent)
+  - [Live Demo](https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/)
 
 ---
 
