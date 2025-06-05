@@ -5,7 +5,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=anuj-kumar-30" alt="anuj-kumar-30" /></a> </p>
 
-## 🚀 Featured Projects
+[View Project Index](project_index.md)
+
+## �� Featured Projects
 
 <details>
 <summary>Filter by Tag</summary>
