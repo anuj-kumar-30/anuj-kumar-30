@@ -5,6 +5,24 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=anuj-kumar-30" alt="anuj-kumar-30" /></a> </p>
 
+## 🚀 Featured Projects
+
+<details>
+<summary>Filter by Tag</summary>
+
+- [All Projects](#featured-projects)
+- [AI](#featured-projects)
+- [LLM](#featured-projects)
+- [Gradio](#featured-projects)
+- [Python](#featured-projects)
+- [Customer Service](#featured-projects)
+
+</details>
+
+| Project | Description | Links | Tags |
+|:--------|:------------|:-----:|:----:|
+| ✈️ Airline AI Assistant | AI-powered airline customer service assistant | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/anuj-kumar-30/LLM-engieering) [![Demo](https://img.shields.io/badge/Demo-238636?style=flat-square&logo=gradio&logoColor=white)](https://cea988592e0df1c2fb.gradio.live) | ![AI](https://img.shields.io/badge/AI-58A6FF?style=flat-square&logo=openai&logoColor=white) ![LLM](https://img.shields.io/badge/LLM-58A6FF?style=flat-square&logo=openai&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-238636?style=flat-square&logo=gradio&logoColor=white) ![Python](https://img.shields.io/badge/Python-58A6FF?style=flat-square&logo=python&logoColor=white) ![Customer Service](https://img.shields.io/badge/Customer_Service-58A6FF?style=flat-square&logo=service&logoColor=white) |
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
@@ -17,4 +35,62 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=anuj-kumar-30&show_icons=true&locale=en" alt="anuj-kumar-30" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anuj-kumar-30&" alt="anuj-kumar-30" /></p>
+
+<style>
+select {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9d1d9;
+    background-color: #0d1117;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+select:hover {
+    border-color: #58A6FF;
+}
+
+.project-row {
+    transition: all 0.2s ease;
+}
+
+.project-row:hover {
+    transform: scale(1.01);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    color: #c9d1d9;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #30363d;
+}
+
+th {
+    font-weight: 500;
+    color: #8b949e;
+}
+
+tr:hover {
+    background-color: #161b22;
+}
+
+a {
+    color: #58A6FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #c9d1d9;
+}
+</style>
 
