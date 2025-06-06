@@ -22,5 +22,11 @@
         "live link": "https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/",
         "Description": "An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces.",
         "Tags": ["streamlit", "Python", "OpenAI", "Gemini"]
+    },
+    "GeminiVision": {
+        "github_link": "https://github.com/anuj-kumar-30/GeminiVision",
+        "live link": "",
+        "Description": "An AI-powered application that uses Google's Gemini Pro Vision model to analyze and process images, providing detailed descriptions and insights about visual content.",
+        "Tags": ["Python", "Google AI", "Gemini", "Computer Vision"]
     }
 }
