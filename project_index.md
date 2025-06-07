@@ -7,9 +7,9 @@
 </div>
 
 ## 📊 Project Statistics
-- Total Projects: 4
-- Technologies Used: 7
-- Categories: Gemini, Google AI, Groq AI, LLM, OpenAI, Python, streamlit
+- Total Projects: 5
+- Technologies Used: 8
+- Categories: Computer Vision, Gemini, Google AI, Groq AI, LLM, OpenAI, Python, streamlit
 
 ## 🎯 Projects
 
@@ -19,6 +19,7 @@
 | 2 | [**Chat with Multiple PDFs**](#chat-with-multiple-pdfs) | An AI-powered application that allows users to chat with multiple PDF documents simultaneously, extracting and analyzing information using Google's AI model. | ![streamlit](https://img.shields.io/badge/streamlit-58A6FF?style=flat-square&logo=streamlit&logoColor=white) ![Python](https://img.shields.io/badge/Python-58A6FF?style=flat-square&logo=python&logoColor=white) ![Google AI](https://img.shields.io/badge/Google%20AI-58A6FF?style=flat-square&logo=googleai&logoColor=white) ![LLM](https://img.shields.io/badge/LLM-58A6FF?style=flat-square&logo=llm&logoColor=white) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/anuj-kumar-30/chat-with-multiple-pdfs/tree/main) [![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)](https://chat-with-mulitple-pdfs.streamlit.app/) |
 | 3 | [**Notion AI Agent with Mem0**](#notion-ai-agent-with-mem0) | An AI-powered Notion agent that uses Mem0 tools and Groq AI model to enhance productivity and automate tasks within Notion workspaces. | ![streamlit](https://img.shields.io/badge/streamlit-58A6FF?style=flat-square&logo=streamlit&logoColor=white) ![Python](https://img.shields.io/badge/Python-58A6FF?style=flat-square&logo=python&logoColor=white) ![LLM](https://img.shields.io/badge/LLM-58A6FF?style=flat-square&logo=llm&logoColor=white) ![Groq AI](https://img.shields.io/badge/Groq%20AI-58A6FF?style=flat-square&logo=groqai&logoColor=white) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/anuj-kumar-30/notion_ai_agent_mem0) [![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)](https://chat-with-notion-mem0.streamlit.app/) |
 | 4 | [**Notion AI Agent with Gemini**](#notion-ai-agent-with-gemini) | An AI-powered Notion agent that uses Gemini 2.0 Flash AI model to enhance productivity and automate tasks within Notion workspaces. | ![streamlit](https://img.shields.io/badge/streamlit-58A6FF?style=flat-square&logo=streamlit&logoColor=white) ![Python](https://img.shields.io/badge/Python-58A6FF?style=flat-square&logo=python&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-58A6FF?style=flat-square&logo=openai&logoColor=white) ![Gemini](https://img.shields.io/badge/Gemini-58A6FF?style=flat-square&logo=gemini&logoColor=white) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/anuj-kumar-30/notion-ai-agent) [![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)](https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/) |
+| 5 | [**GeminiVision**](#geminivision) | An AI-powered application that uses Google's Gemini Pro Vision model to analyze and process images, providing detailed descriptions and insights about visual content. | ![Python](https://img.shields.io/badge/Python-58A6FF?style=flat-square&logo=python&logoColor=white) ![Google AI](https://img.shields.io/badge/Google%20AI-58A6FF?style=flat-square&logo=googleai&logoColor=white) ![Gemini](https://img.shields.io/badge/Gemini-58A6FF?style=flat-square&logo=gemini&logoColor=white) ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-58A6FF?style=flat-square&logo=computervision&logoColor=white) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/anuj-kumar-30/GeminiVision) [![Live Demo](https://img.shields.io/badge/Live_Demo-238636?style=flat-square&logo=streamlit&logoColor=white)]() |
 
 ## 📝 Project Details
 
@@ -50,10 +51,17 @@
   - [GitHub Repository](https://github.com/anuj-kumar-30/notion-ai-agent)
   - [Live Demo](https://notion-ai-agent-yqu9w7szxqcmojsukjnwdu.streamlit.app/)
 
+### 5. GeminiVision {#geminivision}
+- **Description:** An AI-powered application that uses Google's Gemini Pro Vision model to analyze and process images, providing detailed descriptions and insights about visual content.
+- **Tech Stack:** Python, Google AI, Gemini, Computer Vision
+- **Links:**
+  - [GitHub Repository](https://github.com/anuj-kumar-30/GeminiVision)
+  - [Live Demo]()
+
 ---
 
 <div align="center">
 
-![Last Updated](https://img.shields.io/badge/Updated-2025--06--05-30363d)
+![Last Updated](https://img.shields.io/badge/Updated-2025--06--06-30363d)
 
 </div>
