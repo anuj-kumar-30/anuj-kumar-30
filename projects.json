@@ -28,5 +28,11 @@
         "live link": "",
         "Description": "An AI-powered application that uses Google's Gemini Pro Vision model to analyze and process images, providing detailed descriptions and insights about visual content.",
         "Tags": ["Python", "Google AI", "Gemini", "Computer Vision"]
+    },
+    "RecallBot": {
+        "github_link": "https://github.com/anuj-kumar-30/RecallBot",
+        "live link": "https://recall-bot.streamlit.app/",
+        "Description": "An intelligent chatbot that combines AI with memory capabilities to provide context-aware conversations using Google's Gemini AI model and Mem0 for memory management.",
+        "Tags": ["streamlit", "Python", "Google AI", "Gemini", "Mem0"]
     }
 }
